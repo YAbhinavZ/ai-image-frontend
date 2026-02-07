@@ -15,7 +15,7 @@ export const ImageGenerator = () => {
     setError("");
 
     try {
-      const res = await fetch("https://ai-image-backend-qcoy.onrender.com", {
+      const res = await fetch("https://ai-image-backend-qcoy.onrender.com/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
